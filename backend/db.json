@@ -1,0 +1,17 @@
+{
+  "rides": [
+    {
+      "name": "Scoot",
+      "pickup": {
+        "lat": 40.71883496428253,
+        "lng": -73.99008750915527
+      },
+      "dropoff": {
+        "lat": 40.682720875945506,
+        "lng": -73.97575378417969
+      },
+      "id": "DD7QrfPwYZ4"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

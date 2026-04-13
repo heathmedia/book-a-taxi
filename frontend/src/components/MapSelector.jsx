@@ -1,6 +1,8 @@
 import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api";
 import { useState } from "react";
 
+const gmkey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
+
 const center = {
     lat: 40.7128,
     lng: -74.0060
@@ -15,7 +17,7 @@ export default function MapSelector({ setLocation }) {
 
     const { isLoaded } = useLoadScript({
         id: 'google-map-script',
-        googleMapsApiKey: ""
+        googleMapsApiKey: gmkey
     });
 
     const [map, setMap] = useState(null);
@@ -36,7 +38,7 @@ export default function MapSelector({ setLocation }) {
 
     return (
         <GoogleMap
-            mapContainerStyle={containerStyle}
+            mapContainerClassName="w-full h-96 rounded-lg"
             zoom={10}
             center={center}
             onClick={(e) => onMapClick(e)}

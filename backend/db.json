@@ -11,6 +11,18 @@
         "lng": -73.97575378417969
       },
       "id": "DD7QrfPwYZ4"
+    },
+    {
+      "name": "George",
+      "pickup": {
+        "lat": 40.673477729435305,
+        "lng": -74.10415649414062
+      },
+      "dropoff": {
+        "lat": 40.675430613644295,
+        "lng": -74.17007446289062
+      },
+      "id": "6ii74fEDYJQ"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

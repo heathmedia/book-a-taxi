@@ -8,6 +8,7 @@ import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import BookRide from "./pages/BookRide";
 import RideHistory from "./pages/RideHistory";
+import Footer from "./components/Footer";
 
 function App() {
 
@@ -26,7 +27,7 @@ function App() {
         <Route path="/book" element={<BookRide />} />
 
       </Routes>
-
+      <Footer></Footer>
     </BrowserRouter>
   );
 }

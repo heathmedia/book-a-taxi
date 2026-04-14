@@ -11,7 +11,8 @@ export default function Navbar() {
         <Link to="/services">Services</Link>
         <Link to="/contact">Contact</Link>
         <Link to="/rides">Ride History</Link>
-        <Link to="/book" className="bg-white text-black px-3 py-1 rounded">
+        <Link to="/book" className="bg-yellow-500 text-black px-3 py-1 rounded
+            hover:bg-black hover:text-white hover:bordre-1 border-yellow-500">
           Book Ride
         </Link>
       </div>

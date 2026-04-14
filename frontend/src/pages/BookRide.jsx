@@ -10,11 +10,16 @@ export default function BookRide() {
     const [pickup, setPickup] = useState(null);
     const [dropoff, setDropoff] = useState(null);
     const [name, setName] = useState("");
+    const [errorMsg, setErrorMsg] = useState("")
+    const [successMsg, setSuccessMsg] = useState("")
 
     const submitRide = async () => {
 
+        setErrorMsg("")
+        setSuccessMsg("")
+
         if (!name || !pickup || !dropoff) {
-            alert("Please fill all fields");
+            setErrorMsg("Please fill all fields");
             return;
         }
 
@@ -24,7 +29,7 @@ export default function BookRide() {
             dropoff
         });
 
-        alert("Ride booked!");
+        setSuccessMsg("Ride booked!");
     };
 
     return (
@@ -55,10 +60,13 @@ export default function BookRide() {
 
                 <button
                     onClick={submitRide}
-                    className="bg-black text-white px-4 py-2 mt-6 rounded"
+                    className="cursor-pointer bg-black text-white 
+                        px-4 py-2 mt-6 mr-4 rounded hover:bg-yellow-400 hover:text-black"
                 >
                     Confirm Ride
                 </button>
+                <span hidden={!successMsg === ""} className="text-green-500">{successMsg}</span>
+                <span hidden={!errorMsg === ""} className="text-red-500">{errorMsg}</span>
         </motion.div>
     );
 }

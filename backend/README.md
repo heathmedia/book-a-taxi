@@ -1,4 +1,4 @@
-# Book A Taxi
+# 🚕 Book A Taxi / Backend
 
 Taxi booking application frontend built with the MERN stack.
 

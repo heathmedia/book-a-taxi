@@ -15,7 +15,7 @@ export default function RideHistory() {
   };
 
   return (
-     <div className="w-full p-5 max-w-6xl mx-auto my-10">
+    <div className="w-full p-5 max-w-6xl mx-auto my-10">
 
       <h1 className="text-3xl font-bold mb-6">
         Ride History
@@ -25,24 +25,28 @@ export default function RideHistory() {
 
       {rides.map((ride) => (
         <div
-          key={ride.id}
+          key={ride?.id}
           className="border p-4 mb-4 rounded shadow-sm"
         >
 
-          <p><strong>Name:</strong> {ride.name}</p>
+          <p><strong>Name:</strong> {ride?.name}</p>
 
           <p>
-            <strong>Pickup:</strong> {ride.pickup.lat},
-            {ride.pickup.lng}
+            <strong>Pickup:</strong> {ride?.pickup?.lat},
+            {ride?.pickup?.lng}
           </p>
 
           <p>
-            <strong>Dropoff:</strong> {ride.dropoff.lat},
-            {ride.dropoff.lng}
+            <strong>Dropoff:</strong> {ride?.dropoff?.lat},
+            {ride?.dropoff?.lng}
           </p>
 
           <p>
-            <strong>Price:</strong> ${ride.price}
+            <strong>Ride Type:</strong> {ride?.selectedRideType}
+          </p>
+
+          <p>
+            <strong>Price:</strong> ${ride?.price}
           </p>
 
         </div>

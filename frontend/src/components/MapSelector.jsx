@@ -42,7 +42,7 @@ export default function MapSelector({ setLocation }) {
             zoom={10}
             center={center}
             onClick={(e) => onMapClick(e)}
-            >{marker && <Marker position={marker} />}
+        >{marker && <Marker position={marker} />}
         </GoogleMap>
     );
 }

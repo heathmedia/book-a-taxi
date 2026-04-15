@@ -52,7 +52,7 @@ export default function Contact() {
   };
 
   return (
-     <div className="w-full p-5 max-w-6xl mx-auto my-10">
+    <div className="w-full p-5 max-w-6xl mx-auto my-10">
 
       <h1 className="text-4xl font-bold mb-6">
         Contact Us

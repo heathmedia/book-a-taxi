@@ -10,7 +10,7 @@ export default function Footer() {
 
           {/* Brand */}
           <div className="mb-4 md:mb-0">
-            <h2 className="text-xl font-bold">Book a Taxi</h2>
+            <h2 className="text-xl font-bold">Book A Taxi</h2>
             <p className="text-gray-400 text-sm">
               Fast, reliable rides at your fingertips.
             </p>

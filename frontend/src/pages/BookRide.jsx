@@ -3,6 +3,7 @@ import MapSelector from "../components/MapSelector";
 import PriceEstimator from "../components/PriceEstimator";
 import axios from "axios";
 import { motion } from "framer-motion";
+import RideTypeSelector from "../components/RideTypeSelector";
 
 
 export default function BookRide() {
@@ -12,6 +13,30 @@ export default function BookRide() {
     const [name, setName] = useState("");
     const [errorMsg, setErrorMsg] = useState("")
     const [successMsg, setSuccessMsg] = useState("")
+    const [price, setPrice] = useState(null)
+    const [selectedRideType, setSelectedRideType] = useState("economy");
+    //const [rideType, setRideType] = useState("economy")
+
+    const rideTypes = [
+        {
+            id: "economy",
+            name: "Economy",
+            multiplier: 1,
+            description: "Affordable everyday rides"
+        },
+        {
+            id: "comfort",
+            name: "Comfort",
+            multiplier: 1.4,
+            description: "Newer cars with extra space"
+        },
+        {
+            id: "luxury",
+            name: "Luxury",
+            multiplier: 2.1,
+            description: "Premium rides in luxury cars."
+        }
+    ];
 
     const submitRide = async () => {
 
@@ -26,14 +51,16 @@ export default function BookRide() {
         await axios.post("http://localhost:3001/rides", {
             name,
             pickup,
-            dropoff
+            dropoff,
+            selectedRideType,
+            price
         });
 
         setSuccessMsg("Ride booked!");
     };
 
     return (
-         <div className="w-full p-5 max-w-6xl mx-auto my-10">
+        <div className="w-full p-5 max-w-6xl mx-auto my-10">
             <motion.div
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -56,7 +83,11 @@ export default function BookRide() {
 
                 <MapSelector setLocation={setDropoff} />
 
-                <PriceEstimator pickup={pickup} dropoff={dropoff} />
+                <RideTypeSelector rideTypes={rideTypes}
+                    selectedRideType={selectedRideType} setSelectedRideType={setSelectedRideType}></RideTypeSelector>
+
+                <PriceEstimator pickup={pickup} dropoff={dropoff} price={price} setPrice={setPrice}
+                    rideTypes={rideTypes} selectedRideType={selectedRideType} />
 
                 <button
                     onClick={submitRide}

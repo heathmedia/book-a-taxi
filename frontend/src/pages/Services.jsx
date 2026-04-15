@@ -1,13 +1,13 @@
 export default function Services() {
   return (
-     <div className="w-full p-5 max-w-6xl mx-auto my-10">
+    <div className="w-full p-5 max-w-6xl mx-auto my-10">
 
       <h1 className="text-4xl font-bold mb-6">
         Our Services
       </h1>
 
       <p className="text-lg text-gray-700 mb-10">
-        Book a Taxi offers a range of transportation options designed to meet
+        Book A Taxi offers a range of transportation options designed to meet
         different needs, budgets, and travel preferences. Whether you're
         looking for an affordable everyday ride or a premium experience,
         our services make it easy to get where you need to go quickly and

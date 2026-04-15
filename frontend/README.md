@@ -1,4 +1,4 @@
-# Book_A_Taxi
+# Book A Taxi
 
 Taxi booking application frontend built with the MERN stack.
 
@@ -30,4 +30,4 @@ Note: Front-end requires a Google API key to function. [Get a demo API key.](htt
 
 Backend
 
-json-server --watch backend/db.json --port 3001
+npm start

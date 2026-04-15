@@ -6,4 +6,6 @@ Taxi booking application frontend built with the MERN stack.
 
 ### Backend
 
-```npm start```
+```
+npm start
+```

@@ -21,7 +21,7 @@ Taxi booking application frontend built with the MERN stack.
 
 ## Running the Project
 
-Frontend
+### Frontend
 
 npm install
 npm run dev
@@ -30,6 +30,6 @@ npm run dev
 
 `VITE_GOOGLE_MAPS_API_KEY=YourKeyGoesHere`
 
-Backend
+### Backend
 
 npm start

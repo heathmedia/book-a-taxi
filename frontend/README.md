@@ -4,7 +4,7 @@ Taxi booking application frontend built with the MERN stack.
 
 ## Running the Frontend Project
 
-Frontend
+### Frontend
 
 npm install
 npm run dev

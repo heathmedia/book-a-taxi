@@ -1,6 +1,6 @@
 export default function Services() {
   return (
-    <div className="max-w-6xl mx-auto p-6">
+     <div className="w-full p-5 max-w-6xl mx-auto my-10">
 
       <h1 className="text-4xl font-bold mb-6">
         Our Services

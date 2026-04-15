@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Home() {
     return (
-        <div className="h-screen flex flex-col justify-center items-center bg-gray-100 -mb-12">
+        <div className="flex flex-col w-full justify-center items-center text-center">
 
             <h1 className="text-5xl font-bold mb-6">
                 Request a Ride Now

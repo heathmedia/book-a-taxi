@@ -33,11 +33,11 @@ export default function BookRide() {
     };
 
     return (
-        <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="p-6 max-w-4xl mx-auto">
+         <div className="w-full p-5 max-w-6xl mx-auto my-10">
+            <motion.div
+                initial={{ opacity: 0, y: 40 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}>
                 <h1 className="text-3xl font-bold mb-4">
                     Book Your Ride
                 </h1>
@@ -67,6 +67,7 @@ export default function BookRide() {
                 </button>
                 <span hidden={!successMsg === ""} className="text-green-500">{successMsg}</span>
                 <span hidden={!errorMsg === ""} className="text-red-500">{errorMsg}</span>
-        </motion.div>
+            </motion.div>
+        </div>
     );
 }

@@ -15,7 +15,7 @@ export default function RideHistory() {
   };
 
   return (
-    <div className="p-6 max-w-4xl mx-auto">
+     <div className="w-full p-5 max-w-6xl mx-auto my-10">
 
       <h1 className="text-3xl font-bold mb-6">
         Ride History

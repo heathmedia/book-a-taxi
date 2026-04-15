@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <nav className="bg-black text-white p-4 flex justify-between">
+    <nav className="bg-black text-white p-4 flex flex-col justify-between items-center">
+      <div className="flex items-center justify-between w-full max-w-6xl px-6 py-4">
       <h1 className="text-xl font-bold">🚕 Book a Taxi</h1>
-
       <div className="space-x-6">
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
@@ -15,6 +15,7 @@ export default function Navbar() {
             hover:bg-black hover:text-white hover:bordre-1 border-yellow-500">
           Book Ride
         </Link>
+      </div>
       </div>
     </nav>
   );

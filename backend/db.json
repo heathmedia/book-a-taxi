@@ -1,19 +1,5 @@
 {
   "rides": [
-    {
-      "id": "a9a1",
-      "name": "Scott Heath",
-      "pickup": {
-        "lat": 40.71577741296778,
-        "lng": -73.99703979492188
-      },
-      "dropoff": {
-        "lat": 40.73698847122789,
-        "lng": -74.03134098167695
-      },
-      "selectedRideType": "luxury",
-      "price": "9.40"
-    }
   ],
   "$schema": "./node_modules/json-server/schema.json"
 }

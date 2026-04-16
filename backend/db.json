@@ -1,46 +1,18 @@
 {
   "rides": [
     {
-      "id": "b2bd",
-      "name": "Scott",
+      "id": "a9a1",
+      "name": "Scott Heath",
       "pickup": {
-        "lat": 40.67114942243789,
-        "lng": -73.99364038085939
+        "lat": 40.71577741296778,
+        "lng": -73.99703979492188
       },
       "dropoff": {
-        "lat": 40.749222896096896,
-        "lng": -73.50612207031251
+        "lat": 40.73698847122789,
+        "lng": -74.03134098167695
       },
       "selectedRideType": "luxury",
-      "price": "115.09"
-    },
-    {
-      "id": "387b",
-      "name": "Scott",
-      "pickup": {
-        "lat": 40.67114942243789,
-        "lng": -73.99364038085939
-      },
-      "dropoff": {
-        "lat": 40.749222896096896,
-        "lng": -73.50612207031251
-      },
-      "selectedRideType": "comfort",
-      "price": "76.73"
-    },
-    {
-      "id": "c22e",
-      "name": "Scott",
-      "pickup": {
-        "lat": 40.67114942243789,
-        "lng": -73.99364038085939
-      },
-      "dropoff": {
-        "lat": 40.749222896096896,
-        "lng": -73.50612207031251
-      },
-      "selectedRideType": "economy",
-      "price": "54.80"
+      "price": "9.40"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
